@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Aug 19 19:13:11 2015
+# Process ID: 4056
+# Log file: E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.runs/impl_1/top_lvl.vdi
+# Journal file: E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_lvl.tcl -notrace
+Command: open_checkpoint top_lvl_routed.dcp
+INFO: [Netlist 29-17] Analyzing 811 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.runs/impl_1/.Xil/Vivado-4056-KotMorderca/dcp/top_lvl_early.xdc]

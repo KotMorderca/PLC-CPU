@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Aug 20 00:19:10 2015
+# Process ID: 5088
+# Log file: D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.runs/impl_1/top_lvl.vdi
+# Journal file: D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_lvl.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 889 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_microblaze_0_0/programator_microblaze_0_0.xdc] for cell 'PROGRAMATOR_INST/microblaze_0/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_microblaze_0_0/programator_microblaze_0_0.xdc] for cell 'PROGRAMATOR_INST/microblaze_0/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_dlmb_v10_0/programator_dlmb_v10_0.xdc] for cell 'PROGRAMATOR_INST/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_dlmb_v10_0/programator_dlmb_v10_0.xdc] for cell 'PROGRAMATOR_INST/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_ilmb_v10_0/programator_ilmb_v10_0.xdc] for cell 'PROGRAMATOR_INST/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_ilmb_v10_0/programator_ilmb_v10_0.xdc] for cell 'PROGRAMATOR_INST/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_microblaze_0_axi_intc_0/programator_microblaze_0_axi_intc_0.xdc] for cell 'PROGRAMATOR_INST/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_microblaze_0_axi_intc_0/programator_microblaze_0_axi_intc_0.xdc] for cell 'PROGRAMATOR_INST/microblaze_0_axi_intc/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_mdm_1_0/programator_mdm_1_0.xdc] for cell 'PROGRAMATOR_INST/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_mdm_1_0/programator_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1111.785 ; gain = 494.012
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_mdm_1_0/programator_mdm_1_0.xdc] for cell 'PROGRAMATOR_INST/mdm_1/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_clk_wiz_1_0/programator_clk_wiz_1_0_board.xdc] for cell 'PROGRAMATOR_INST/clk_wiz_1/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_clk_wiz_1_0/programator_clk_wiz_1_0_board.xdc] for cell 'PROGRAMATOR_INST/clk_wiz_1/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_clk_wiz_1_0/programator_clk_wiz_1_0.xdc] for cell 'PROGRAMATOR_INST/clk_wiz_1/U0'
+INFO: [Timing 38-2] Deriving generated clocks [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_clk_wiz_1_0/programator_clk_wiz_1_0.xdc:56]
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_clk_wiz_1_0/programator_clk_wiz_1_0.xdc] for cell 'PROGRAMATOR_INST/clk_wiz_1/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_rst_clk_wiz_1_100M_0/programator_rst_clk_wiz_1_100M_0_board.xdc] for cell 'PROGRAMATOR_INST/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_rst_clk_wiz_1_100M_0/programator_rst_clk_wiz_1_100M_0_board.xdc] for cell 'PROGRAMATOR_INST/rst_clk_wiz_1_100M'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_rst_clk_wiz_1_100M_0/programator_rst_clk_wiz_1_100M_0.xdc] for cell 'PROGRAMATOR_INST/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_rst_clk_wiz_1_100M_0/programator_rst_clk_wiz_1_100M_0.xdc] for cell 'PROGRAMATOR_INST/rst_clk_wiz_1_100M'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_uartlite_0_0/programator_axi_uartlite_0_0_board.xdc] for cell 'PROGRAMATOR_INST/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_uartlite_0_0/programator_axi_uartlite_0_0_board.xdc] for cell 'PROGRAMATOR_INST/axi_uartlite_0/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_uartlite_0_0/programator_axi_uartlite_0_0.xdc] for cell 'PROGRAMATOR_INST/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_uartlite_0_0/programator_axi_uartlite_0_0.xdc] for cell 'PROGRAMATOR_INST/axi_uartlite_0/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_quad_spi_0_0/programator_axi_quad_spi_0_0_board.xdc] for cell 'PROGRAMATOR_INST/axi_quad_spi_0/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_quad_spi_0_0/programator_axi_quad_spi_0_0_board.xdc] for cell 'PROGRAMATOR_INST/axi_quad_spi_0/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_quad_spi_0_0/programator_axi_quad_spi_0_0.xdc] for cell 'PROGRAMATOR_INST/axi_quad_spi_0/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_quad_spi_0_0/programator_axi_quad_spi_0_0.xdc] for cell 'PROGRAMATOR_INST/axi_quad_spi_0/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_gpio_0_0/programator_axi_gpio_0_0_board.xdc] for cell 'PROGRAMATOR_INST/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_gpio_0_0/programator_axi_gpio_0_0_board.xdc] for cell 'PROGRAMATOR_INST/axi_gpio_0/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_gpio_0_0/programator_axi_gpio_0_0.xdc] for cell 'PROGRAMATOR_INST/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_gpio_0_0/programator_axi_gpio_0_0.xdc] for cell 'PROGRAMATOR_INST/axi_gpio_0/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_mig_7series_0_0/programator_mig_7series_0_0/user_design/constraints/programator_mig_7series_0_0.xdc] for cell 'PROGRAMATOR_INST/mig_7series_0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_mig_7series_0_0/programator_mig_7series_0_0/user_design/constraints/programator_mig_7series_0_0.xdc] for cell 'PROGRAMATOR_INST/mig_7series_0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_rst_mig_7series_0_81M_0/programator_rst_mig_7series_0_81M_0_board.xdc] for cell 'PROGRAMATOR_INST/rst_mig_7series_0_81M'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_rst_mig_7series_0_81M_0/programator_rst_mig_7series_0_81M_0_board.xdc] for cell 'PROGRAMATOR_INST/rst_mig_7series_0_81M'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_rst_mig_7series_0_81M_0/programator_rst_mig_7series_0_81M_0.xdc] for cell 'PROGRAMATOR_INST/rst_mig_7series_0_81M'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_rst_mig_7series_0_81M_0/programator_rst_mig_7series_0_81M_0.xdc] for cell 'PROGRAMATOR_INST/rst_mig_7series_0_81M'
+Parsing XDC File [D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_microblaze_0_axi_intc_0/programator_microblaze_0_axi_intc_0_clocks.xdc] for cell 'PROGRAMATOR_INST/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_microblaze_0_axi_intc_0/programator_microblaze_0_axi_intc_0_clocks.xdc] for cell 'PROGRAMATOR_INST/microblaze_0_axi_intc/U0'
+Parsing XDC File [d:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/bd/programator/ip/programator_axi_quad_spi_0_0/programator_axi_quad_spi_0_0_clocks.xdc] for cell 'PROGRAMATOR_INST/axi_quad_spi_0/U0'

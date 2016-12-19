@@ -1,0 +1,38 @@
+22:17:03 **** Build of configuration Release for project programator ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -I../../programator_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:4:0:
+../src/main.c: In function 'main':
+../../programator_bsp/microblaze_0/include/xparameters.h:497:34: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define XPAR_AXI_GPIO_0_BASEADDR 0x40000000
+                                  ^
+../src/main.c:74:26: note: in expansion of macro 'XPAR_AXI_GPIO_0_BASEADDR'
+  XGpio_Initialize(&gpio, XPAR_AXI_GPIO_0_BASEADDR);
+                          ^
+../src/main.c: At top level:
+../src/main.c:141:5: warning: 'IsfWaitForFlashNotBusy' defined but not used [-Wunused-function]
+ int IsfWaitForFlashNotBusy(void) {
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -I../../programator_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: programator.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../programator_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "programator.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+(.text.startup+0xc8): undefined reference to `XIsf_Initialize'
+./src/main.o: In function `main':
+(.text.startup+0x108): undefined reference to `XIsf_Read'
+./src/main.o: In function `main':
+(.text.startup+0x240): undefined reference to `XIsf_Read'
+collect2.exe: error: ld returned 1 exit status
+make: *** [programator.elf] B³¹d 1
+
+22:17:04 Build Finished (took 534ms)
+

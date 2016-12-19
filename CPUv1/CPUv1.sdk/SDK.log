@@ -1,0 +1,584 @@
+14:14:46 INFO  : Launching XSDB server: xsdb.bat -s E:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+14:14:48 INFO  : Processing command line option -hwspec E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+14:14:50 INFO  : XSDB server has started successfully.
+14:16:29 INFO  : Refreshed build settings on project programator
+14:17:41 INFO  : Refreshed build settings on project programator
+14:21:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:21:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+14:21:48 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+14:22:43 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:23:03 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:23:26 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:23:28 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:23:32 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:27:59 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:28:26 INFO  : Launching XSDB server: xsdb.bat -s E:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+16:28:27 INFO  : XSDB server has started successfully.
+16:28:28 INFO  : Processing command line option -hwspec E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+16:28:29 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_0.
+16:28:29 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1439469969000,  Project:1439467202000
+16:28:29 INFO  : The hardware specification for project 'top_lvl_hw_platform_0' is different from E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+16:28:29 INFO  : Copied contents of E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_0\system.hdf.
+16:28:29 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:28:30 INFO  : 
+16:28:31 INFO  : Updating hardware inferred compiler options for programator.
+16:28:31 INFO  : Clearing existing target manager status.
+16:29:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:29:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+16:29:59 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+16:30:09 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:44:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+16:44:23 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+16:44:30 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:12:34 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:15:23 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:27:15 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:56:41 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1439481369000,  Project:1439469969000
+17:56:41 INFO  : Project top_lvl_hw_platform_0's source hardware specification located at E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+17:56:53 INFO  : Copied contents of E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_0\system.hdf.
+17:56:53 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:56:54 INFO  : 
+17:56:55 INFO  : Updating hardware inferred compiler options for programator.
+17:56:55 INFO  : Clearing existing target manager status.
+17:58:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:58:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+17:58:49 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+17:58:54 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:59:00 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+18:34:22 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1439483150000,  Project:1439481369000
+18:34:22 INFO  : Project top_lvl_hw_platform_0's source hardware specification located at E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:34:23 INFO  : Copied contents of E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_0\system.hdf.
+18:34:24 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:34:25 INFO  : 
+18:34:26 INFO  : Updating hardware inferred compiler options for programator.
+18:34:26 INFO  : Clearing existing target manager status.
+18:34:44 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:423)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+18:53:54 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1439484711424,  Project:1439483150000
+18:53:54 INFO  : Project top_lvl_hw_platform_0's source hardware specification located at E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:53:56 INFO  : Copied contents of E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_0\system.hdf.
+18:53:57 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:53:58 INFO  : 
+18:53:59 INFO  : Updating hardware inferred compiler options for programator.
+18:53:59 INFO  : Clearing existing target manager status.
+18:54:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:54:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:54:59 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:55:26 INFO  : Processor reset is completed for microblaze_0
+19:12:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1439485917551,  Project:1439484711000
+19:12:21 INFO  : Project top_lvl_hw_platform_0's source hardware specification located at E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+19:12:25 INFO  : Copied contents of E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_0\system.hdf.
+19:12:25 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:12:27 INFO  : 
+19:12:27 INFO  : Updating hardware inferred compiler options for programator.
+19:12:27 INFO  : Clearing existing target manager status.
+19:12:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:12:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+19:12:51 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+19:12:55 INFO  : Processor reset is completed for microblaze_0
+19:12:59 ERROR : Port COM22 is already in use.
+19:20:55 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:01:10 INFO  : Launching XSDB server: xsdb.bat -s E:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:01:13 INFO  : Processing command line option -hwspec E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+13:01:14 INFO  : XSDB server has started successfully.
+13:01:15 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_0.
+13:13:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+13:13:10 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+13:14:17 INFO  : Processor reset is completed for microblaze_0
+13:19:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:19:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+13:19:25 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+13:19:30 INFO  : Processor reset is completed for microblaze_0
+13:26:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+13:26:40 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+13:27:14 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:27:18 INFO  : Processor reset is completed for microblaze_0
+13:32:09 INFO  : Processor reset is completed for microblaze_0
+14:10:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1439986128000,  Project:1439485917000
+14:10:49 INFO  : Project top_lvl_hw_platform_0's source hardware specification located at E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+14:10:49 INFO  : Copied contents of E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_0\system.hdf.
+14:10:49 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+14:10:50 INFO  : 
+14:10:51 INFO  : Updating hardware inferred compiler options for programator.
+14:10:51 INFO  : Clearing existing target manager status.
+14:11:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:11:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+14:11:15 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+14:12:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:12:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+14:12:29 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+14:12:36 INFO  : Processor reset is completed for microblaze_0
+14:12:40 ERROR : Port COM22 is already in use.
+14:12:59 INFO  : Processor reset is completed for microblaze_0
+14:58:35 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:56:25 INFO  : Launching XSDB server: xsdb.bat -s E:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+16:56:28 INFO  : Processing command line option -hwspec E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+16:56:29 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_0.
+16:56:29 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1439989536000,  Project:1439986128000
+16:56:29 INFO  : The hardware specification for project 'top_lvl_hw_platform_0' is different from E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+16:56:29 INFO  : Copied contents of E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_0\system.hdf.
+16:56:29 INFO  : XSDB server has started successfully.
+16:56:48 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:57:08 INFO  : 
+16:57:09 INFO  : Updating hardware inferred compiler options for programator.
+16:57:09 INFO  : Clearing existing target manager status.
+16:58:33 INFO  : Processor reset is completed for microblaze_0
+17:41:17 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1439997755000,  Project:1439989536000
+17:41:17 INFO  : Project top_lvl_hw_platform_0's source hardware specification located at E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+17:41:17 INFO  : Copied contents of E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_0\system.hdf.
+17:41:18 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:41:19 INFO  : 
+17:41:20 INFO  : Updating hardware inferred compiler options for programator.
+17:41:20 INFO  : Clearing existing target manager status.
+17:46:35 INFO  : Launching XSDB server: xsdb.bat -s E:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+17:46:35 INFO  : Processing command line option -hwspec E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+17:46:36 INFO  : XSDB server has started successfully.
+17:46:36 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_0.
+17:46:54 INFO  : Launching XSDB server: xsdb.bat -s E:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+17:46:55 INFO  : XSDB server has started successfully.
+17:46:55 INFO  : Processing command line option -hwspec E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+17:46:56 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_0.
+17:48:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+17:48:34 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+17:50:12 INFO  : Processor reset is completed for microblaze_0
+17:51:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:51:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+17:51:05 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+17:51:13 INFO  : Processor reset is completed for microblaze_0
+18:05:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:05:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:05:06 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:05:33 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:05:35 INFO  : Processor reset is completed for microblaze_0
+18:26:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1440001531456,  Project:1439997755000
+18:26:02 INFO  : Project top_lvl_hw_platform_0's source hardware specification located at E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:26:02 INFO  : Copied contents of E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_0\system.hdf.
+18:26:03 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:26:04 INFO  : 
+18:26:05 INFO  : Updating hardware inferred compiler options for programator.
+18:26:05 INFO  : Clearing existing target manager status.
+18:26:10 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1440001531000,  Project:1440001531456
+18:26:10 INFO  : Project top_lvl_hw_platform_0's source hardware specification located at E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:26:10 INFO  : Copied contents of E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_0\system.hdf.
+18:26:10 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:26:12 INFO  : 
+18:26:12 INFO  : Updating hardware inferred compiler options for programator.
+18:26:12 INFO  : Clearing existing target manager status.
+18:26:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:26:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:26:36 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:26:49 INFO  : Processor reset is completed for microblaze_0
+18:33:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:33:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:34:02 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:34:30 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:34:34 INFO  : Processor reset is completed for microblaze_0
+18:36:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:36:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:36:47 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:36:53 INFO  : Processor reset is completed for microblaze_0
+18:38:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:38:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:38:28 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:38:37 INFO  : Processor reset is completed for microblaze_0
+18:47:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:47:25 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:47:31 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:47:34 INFO  : Processor reset is completed for microblaze_0
+18:48:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:48:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:48:50 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:49:01 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:49:03 INFO  : Processor reset is completed for microblaze_0
+18:53:32 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:53:33 INFO  : Processor reset is completed for microblaze_0
+18:53:55 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:53:57 INFO  : Processor reset is completed for microblaze_0
+18:54:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:54:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:54:34 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:54:50 INFO  : Processor reset is completed for microblaze_0
+18:55:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:55:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:55:35 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:55:40 INFO  : Processor reset is completed for microblaze_0
+18:57:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:57:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+18:57:30 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+18:57:34 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:57:36 INFO  : Processor reset is completed for microblaze_0
+19:07:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:07:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+19:07:34 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+19:08:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:08:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+19:08:34 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+19:09:31 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:23:28 INFO  : Launching XSDB server: xsdb.bat -s E:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+19:23:28 INFO  : Processing command line option -hwspec E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+19:23:29 INFO  : XSDB server has started successfully.
+19:23:29 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_0.
+19:23:37 INFO  : Processor reset is completed for microblaze_0
+19:23:55 INFO  : Processor reset is completed for microblaze_0
+19:27:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:27:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+19:28:02 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+19:28:05 INFO  : Processor reset is completed for microblaze_0
+19:28:27 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:28:28 INFO  : Processor reset is completed for microblaze_0
+19:29:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:29:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+19:29:12 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+19:29:26 INFO  : Processor reset is completed for microblaze_0
+19:31:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:31:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+19:31:12 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+19:31:21 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:31:22 INFO  : Processor reset is completed for microblaze_0
+19:32:21 INFO  : Processor reset is completed for microblaze_0
+19:32:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:32:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+19:32:52 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+19:39:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:39:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+19:39:32 INFO  : FPGA configured successfully with bitstream "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+19:39:37 INFO  : Processor reset is completed for microblaze_0
+19:40:45 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:54:56 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+01:54:58 INFO  : Processing command line option -hwspec D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+01:54:59 INFO  : XSDB server has started successfully.
+01:55:35 INFO  : Processor reset is completed for microblaze_0
+01:55:37 ERROR : No such port: COM22
+01:56:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:56:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+01:56:10 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+01:56:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:56:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+01:56:59 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+01:57:05 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:57:06 INFO  : Processor reset is completed for microblaze_0
+01:57:08 ERROR : No such port: COM22
+01:57:28 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:58:36 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+00:58:37 INFO  : Processing command line option -hwspec D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+00:58:38 INFO  : XSDB server has started successfully.
+00:58:38 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_1.
+01:59:46 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+01:59:48 INFO  : Processing command line option -hwspec D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+01:59:48 INFO  : XSDB server has started successfully.
+01:59:49 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_1.
+01:59:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1440806338817,  Project:1440028346603
+01:59:49 INFO  : The hardware specification for project 'top_lvl_hw_platform_1' is different from D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+01:59:49 INFO  : Copied contents of D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf into \top_lvl_hw_platform_1\system.hdf.
+01:59:50 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:59:59 INFO  : Clearing existing target manager status.
+02:00:00 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:00:00 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+02:02:11 INFO  : Processor reset is completed for microblaze_0
+02:02:13 ERROR : No such port: COM22
+02:02:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:02:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+02:02:58 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+02:03:04 INFO  : Processor reset is completed for microblaze_0
+02:03:06 ERROR : No such port: COM22
+02:03:41 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+02:03:42 INFO  : Processor reset is completed for microblaze_0
+02:03:44 ERROR : No such port: COM22
+02:37:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:37:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+02:37:34 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+02:38:01 INFO  : Processor reset is completed for microblaze_0
+02:38:03 ERROR : No such port: COM22
+02:39:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:39:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+02:39:38 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+02:39:50 INFO  : Processor reset is completed for microblaze_0
+02:39:52 ERROR : No such port: COM22
+02:41:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:41:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+02:41:06 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+02:43:35 INFO  : Processor reset is completed for microblaze_0
+02:43:37 ERROR : No such port: COM22
+02:48:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:48:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+02:48:24 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+02:48:37 INFO  : Processor reset is completed for microblaze_0
+02:48:39 ERROR : No such port: COM22
+02:53:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:53:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+02:53:19 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+02:54:06 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+02:54:07 INFO  : Processor reset is completed for microblaze_0
+02:54:09 ERROR : No such port: COM22
+03:29:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:29:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+03:29:58 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+03:31:08 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+03:31:09 INFO  : Processor reset is completed for microblaze_0
+03:31:11 ERROR : No such port: COM22
+03:55:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:55:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+03:55:23 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+03:56:35 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+03:56:39 INFO  : Processor reset is completed for microblaze_0
+03:56:41 ERROR : No such port: COM22
+04:00:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:00:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+04:00:30 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+04:00:51 INFO  : Processor reset is completed for microblaze_0
+04:00:53 ERROR : No such port: COM22
+04:02:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:02:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+04:02:45 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+04:02:54 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+04:02:55 INFO  : Processor reset is completed for microblaze_0
+04:02:57 ERROR : No such port: COM22
+04:27:26 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:41:59 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+20:42:00 INFO  : Processing command line option -hwspec C:/Users/piotr/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+20:42:02 INFO  : XSDB server has started successfully.
+20:42:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:42:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+20:42:36 INFO  : FPGA configured successfully with bitstream "C:/Users/piotr/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+20:42:54 INFO  : Processor reset is completed for microblaze_0
+20:42:57 ERROR : No such port: COM22
+20:43:35 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:47:58 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:47:59 INFO  : Processing command line option -hwspec C:/Users/piotr/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+13:48:00 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_2.
+13:48:01 INFO  : XSDB server has started successfully.
+13:48:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:48:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+13:48:41 INFO  : FPGA configured successfully with bitstream "C:/Users/piotr/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+13:54:15 INFO  : Processor reset is completed for microblaze_0
+13:54:18 ERROR : No such port: COM22
+14:01:46 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:41:33 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+20:41:35 INFO  : Processing command line option -hwspec D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+20:41:35 INFO  : XSDB server has started successfully.
+20:41:36 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_1.
+20:48:38 INFO  : Refreshed build settings on project programator
+21:27:05 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+21:27:07 INFO  : XSDB server has started successfully.
+21:27:07 INFO  : Processing command line option -hwspec D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+21:27:09 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_1.
+21:30:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:30:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+21:30:12 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+21:30:54 INFO  : Processor reset is completed for microblaze_0
+21:30:57 ERROR : No such port: COM22
+21:35:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:35:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+21:35:58 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+21:36:08 INFO  : Processor reset is completed for microblaze_0
+21:36:10 ERROR : No such port: COM22
+21:37:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:37:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646182A" && level==0} -index 0' command is executed.
+21:37:37 INFO  : FPGA configured successfully with bitstream "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl_hw_platform_0/download.bit"
+21:37:40 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:37:41 INFO  : Processor reset is completed for microblaze_0
+21:37:43 ERROR : No such port: COM22
+21:42:58 INFO  : Processor reset is completed for microblaze_0
+21:43:00 ERROR : No such port: COM22
+21:45:08 INFO  : Processor reset is completed for microblaze_0
+21:45:11 ERROR : No such port: COM22
+21:47:26 INFO  : Processor reset is completed for microblaze_0
+21:47:29 ERROR : No such port: COM22
+21:48:09 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:48:10 INFO  : Processor reset is completed for microblaze_0
+21:48:12 ERROR : No such port: COM22
+21:51:13 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:51:16 INFO  : Processor reset is completed for microblaze_0
+21:51:19 ERROR : No such port: COM22
+21:53:56 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:53:58 INFO  : Processor reset is completed for microblaze_0
+21:54:00 ERROR : No such port: COM22
+21:55:20 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:55:22 INFO  : Processor reset is completed for microblaze_0
+21:55:25 ERROR : No such port: COM22
+21:56:26 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:56:57 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+21:56:59 INFO  : XSDB server has started successfully.
+21:56:59 INFO  : Processing command line option -hwspec D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.sdk/top_lvl.hdf.
+21:57:00 INFO  : Checking for hwspec changes in the project top_lvl_hw_platform_1.

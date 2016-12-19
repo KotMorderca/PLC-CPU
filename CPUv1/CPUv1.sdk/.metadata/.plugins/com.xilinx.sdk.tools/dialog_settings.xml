@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="top_lvl_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="" key="top_lvl_hw_platform_0-imgFile"/>
+	<item value="Local" key="top_lvl_hw_platform_0-target"/>
+	<item value="s25fl128sxxxxxx0-spi-x1_x2_x4" key="top_lvl_hw_platform_0-flashType"/>
+	<item value="false" key="top_lvl_hw_platform_0-blankCheck"/>
+	<item value="" key="com.xilinx.sdk.debug.sysgen.mdlName"/>
+	<item value="" key="top_lvl_hw_platform_0-fsblFile"/>
+	<item value="" key="top_lvl_hw_platform_0-offSet"/>
+	<item value="false" key="top_lvl_hw_platform_0-verifyFlash"/>
+	<item value="Auto Detect" key="top_lvl_hw_platform_0-device"/>
+</section>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_lvl_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="top_lvl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wave_markers>
+      <marker time="2147483647" label="" />
+      <marker time="2147483647" label="" />
+      <marker time="2147483647" label="" />
+      <marker time="2147483647" label="" />
+      <marker time="2147483647" label="" />
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CLK_wire" type="logic">
+      <obj_property name="ElementShortName">CLK_wire</obj_property>
+      <obj_property name="ObjectShortName">CLK_wire</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CLK180_wire" type="logic">
+      <obj_property name="ElementShortName">CLK180_wire</obj_property>
+      <obj_property name="ObjectShortName">CLK180_wire</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/data_out_bus" type="array">
+      <obj_property name="ElementShortName">data_out_bus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_bus[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/data_in_bus[0]" type="logic">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_bus[0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/address_bus" type="array">
+      <obj_property name="ElementShortName">address_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">address_bus[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/control_bus" type="array">
+      <obj_property name="ElementShortName">control_bus[9:0]</obj_property>
+      <obj_property name="ObjectShortName">control_bus[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/PC" type="array">
+      <obj_property name="ElementShortName">PC[5:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/prog_mem_address" type="array">
+      <obj_property name="ElementShortName">prog_mem_address[5:0]</obj_property>
+      <obj_property name="ObjectShortName">prog_mem_address[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/prog_mem_data" type="array">
+      <obj_property name="ElementShortName">prog_mem_data[39:0]</obj_property>
+      <obj_property name="ObjectShortName">prog_mem_data[39:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[7:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/operand" type="array">
+      <obj_property name="ElementShortName">operand[31:0]</obj_property>
+      <obj_property name="ObjectShortName">operand[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/current_tick" type="other">
+      <obj_property name="ElementShortName">current_tick</obj_property>
+      <obj_property name="ObjectShortName">current_tick</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/top_lvl/CPU_INST/CR_b[0]" type="logic">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">CR_b[0]</obj_property>
+   </wvobject>
+</wave_config>

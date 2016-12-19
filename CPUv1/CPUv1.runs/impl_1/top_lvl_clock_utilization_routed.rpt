@@ -1,0 +1,429 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date              : Fri Mar 11 13:20:16 2016
+| Host              : Piotrek-Dom running 64-bit major release  (build 9200)
+| Command           : report_clock_utilization -file top_lvl_clock_utilization_routed.rpt
+| Design            : top_lvl
+| Device            : 7a100t-csg324
+| Speed File        : -1  PRODUCTION 1.14 2014-09-11
+| Temperature Grade : C
+------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X0Y0
+9. Net wise resources used in clock region X1Y0
+10. Net wise resources used in clock region X0Y1
+11. Net wise resources used in clock region X1Y1
+12. Net wise resources used in clock region X0Y2
+13. Net wise resources used in clock region X1Y2
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+-----------+
+| Type  | Used | Available | Num Fixed |
++-------+------+-----------+-----------+
+| BUFG  |    8 |        32 |         0 |
+| BUFH  |    1 |        96 |         0 |
+| BUFIO |    0 |        24 |         0 |
+| MMCM  |    2 |         6 |         1 |
+| PLL   |    1 |         6 |         1 |
+| BUFR  |    0 |        24 |         0 |
+| BUFMR |    0 |        12 |         0 |
++-------+------+-----------+-----------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+--------------+-------+
+|       |                                                                                                       |                                                                                            |   Num Loads  |       |
++-------+-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------+-------+-------+
+| Index | BUFG Cell                                                                                             | Net Name                                                                                   | BELs | Sites | Fixed |
++-------+-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------+-------+-------+
+|     1 | PROGRAMATOR_INST/clk_wiz_1/U0/clkf_buf                                                                | PROGRAMATOR_INST/clk_wiz_1/U0/CLKFBIN                                                      |    1 |     1 |    no |
+|     2 | PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_UPDATE_BUFG_inst                                                   | PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_UPDATE                                                  |   39 |    16 |    no |
+|     3 | PROGRAMATOR_INST/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK                                                 | PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_DRCK                                                    |  236 |    86 |    no |
+|     4 | PROGRAMATOR_INST/clk_wiz_1/U0/clkout2_buf                                                             | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out2                                                     |  298 |    86 |    no |
+|     5 | PROGRAMATOR_INST/clk_wiz_1/U0/clkout4_buf                                                             | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out4                                                     |  515 |   215 |    no |
+|     6 | PROGRAMATOR_INST/clk_wiz_1/U0/clkout3_buf                                                             | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out3                                                     |  763 |   394 |    no |
+|     7 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/u_bufg_clkdiv0 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/CLK | 6706 |  1851 |    no |
+|     8 | PROGRAMATOR_INST/clk_wiz_1/U0/clkout1_buf                                                             | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1                                                     | 9809 |  2758 |    no |
++-------+-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------+-------+-------+
+
+
++-------+--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+--------------+-------+
+|       |                                                                                                        |                                                                                                 |   Num Loads  |       |
++-------+--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------+-------+-------+
+| Index | BUFH Cell                                                                                              | Net Name                                                                                        | BELs | Sites | Fixed |
++-------+--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------+-------+-------+
+|     1 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/u_bufh_pll_clk3 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/pll_clk3 |    1 |     1 |    no |
++-------+--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------+-------+-------+
+
+
++-------+--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+--------------+-------+
+|       |                                                                                                        |                                                                                                  |   Num Loads  |       |
++-------+--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------+-------+-------+
+| Index | MMCM Cell                                                                                              | Net Name                                                                                         | BELs | Sites | Fixed |
++-------+--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------+-------+-------+
+|     1 | PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst                                                            | PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst_n_0                                                  |    1 |     1 |    no |
+|     2 | PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst                                                            | PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst_n_4                                                  |    1 |     1 |    no |
+|     3 | PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst                                                            | PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst_n_6                                                  |    1 |     1 |    no |
+|     4 | PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst                                                            | PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst_n_8                                                  |    1 |     1 |    no |
+|     5 | PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst                                                            | PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst_n_9                                                  |    1 |     1 |    no |
+|     6 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/gen_mmcm.mmcm_i | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/clk_pll_i |    1 |     1 |   yes |
++-------+--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------+-------+-------+
+
+
++-------+------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+--------------+-------+
+|       |                                                                                                |                                                                                                     |   Num Loads  |       |
++-------+------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------+-------+-------+
+| Index | PLL Cell                                                                                       | Net Name                                                                                            | BELs | Sites | Fixed |
++-------+------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------+-------+-------+
+|     1 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/plle2_i | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/pll_clk3_out |    1 |     1 |   yes |
+|     2 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/plle2_i | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/pll_clkfbout |    1 |     1 |   yes |
+|     3 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/plle2_i | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/freq_refclk  |    7 |     7 |   yes |
+|     4 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/plle2_i | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/mem_refclk   |    7 |     7 |   yes |
+|     5 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/plle2_i | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/sync_pulse   |    7 |     7 |   yes |
++-------+------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------+-------+-------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
+6. Details of Local Clocks
+--------------------------
+
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-------+
+|       |                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                               |   Num Loads  |       |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+| Index | Local Clk Src                                                                                                                                                                                                                          | Net Name                                                                                                                                                                                                                                                      | BELs | Sites | Fixed |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+|     1 | PROGRAMATOR_INST/clk_wiz_1/U0/clkin1_ibufg                                                                                                                                                                                             | PROGRAMATOR_INST/clk_wiz_1/U0/CLKIN1                                                                                                                                                                                                                          |    1 |     1 |   yes |
+|     2 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out              | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed                            |    2 |     2 |   yes |
+|     3 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out              | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed                            |    2 |     2 |   yes |
+|     4 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0 |    8 |    16 |   yes |
+|     5 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0 |    8 |    16 |   yes |
+|     6 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv                                 |    9 |     9 |   yes |
+|     7 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv                                 |    9 |     9 |   yes |
+|     8 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out              | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv                                 |   11 |    11 |   yes |
+|     9 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out              | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv                                 |   11 |    11 |   yes |
+|    10 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out              | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk                                    |   11 |    11 |   yes |
+|    11 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out              | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv                                 |   11 |    11 |   yes |
+|    12 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out              | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk                                    |   12 |    12 |   yes |
+|    13 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out              | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv                                 |   13 |    13 |   yes |
+|    14 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out              | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk                                    |   18 |    18 |   yes |
+|    15 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out              | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk                                    |   18 |    18 |   yes |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1093 | 20800 |  136 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |  229 | 12000 |    0 |  2200 |    0 |    40 |    1 |    20 |    0 |    40 |
+| X0Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    2 |    50 |    0 |    50 | 2922 | 16000 |  585 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |   16 |    50 |   45 |    50 | 4786 | 15200 | 1356 |  2600 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3444 | 16000 |  635 |  2400 |    0 |    20 |    7 |    10 |    0 |    20 |
+| X1Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2879 | 15200 |  247 |  2600 |    0 |    60 |   11 |    30 |    0 |    40 |
+| X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y3              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |    0 | 10800 |    0 |  2000 |    0 |    30 |    0 |    15 |    0 |    40 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites.
+
+
+8. Net wise resources used in clock region X0Y0
+-----------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |             Clock Net Name             |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------+
+| BUFG        | BUFHCE_X0Y9 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 378 |   136 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out4 |
+| BUFG        | BUFHCE_X0Y8 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 715 |     0 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out3 |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------+
+
+
+9. Net wise resources used in clock region X1Y0
+-----------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                       Clock Net Name                                       |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------------------------------------------------+
+| BUFG        | BUFHCE_X1Y9  |   no  |         0 |        0 |       0 |         2 |       0 |       0 |   0 |     0 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out4                                                     |
+| BUFG        | BUFHCE_X1Y8  |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  33 |     0 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1                                                     |
+| BUFG        | BUFHCE_X1Y10 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 196 |     0 |        0 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/CLK |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------------------------------------------------+
+
+
+10. Net wise resources used in clock region X0Y1
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+--------------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                       Clock Net Name                                       |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+--------------------------------------------------------------------------------------------+
+| BUFG        | BUFHCE_X0Y23 |   no  |         0 |        0 |       0 |         0 |       2 |       0 |    3 |     0 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out2                                                     |
+| BUFG        | BUFHCE_X0Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   48 |     0 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out3                                                     |
+| BUFG        | BUFHCE_X0Y22 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 1253 |    68 |        0 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/CLK |
+| BUFG        | BUFHCE_X0Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 1618 |   517 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1                                                     |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
+11. Net wise resources used in clock region X1Y1
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                          Clock Net Name                                         |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------------------------------------------------------+
+| BUFH        |      ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |    0 |     0 |        0 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/pll_clk3 |
+| BUFG        | BUFHCE_X1Y14 |   no  |         0 |        1 |       0 |         0 |       0 |       0 |   15 |     0 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out2                                                          |
+| BUFG        | BUFHCE_X1Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  890 |    78 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1                                                          |
+| BUFG        | BUFHCE_X1Y13 |   no  |         2 |        0 |       0 |         0 |       0 |       0 | 3881 |  1278 |        0 | PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/CLK      |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------------------------------------------------------+
+
+
+12. Net wise resources used in clock region X0Y2
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |               Clock Net Name              |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------+
+| BUFG        | BUFHCE_X0Y34 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   39 |     0 |        0 | PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_UPDATE |
+| BUFG        | BUFHCE_X0Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  163 |    29 |        0 | PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_DRCK   |
+| BUFG        | BUFHCE_X0Y35 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  259 |    16 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out2    |
+| BUFG        | BUFHCE_X0Y33 |   no  |         0 |        0 |       0 |        14 |       0 |       0 | 2983 |   590 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1    |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------+
+
+
+13. Net wise resources used in clock region X1Y2
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |              Clock Net Name             |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------+
+| BUFG        | BUFHCE_X1Y24 |   no  |         1 |        0 |       0 |         0 |       0 |       0 |    0 |     0 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/CLKFBIN   |
+| BUFG        | BUFHCE_X1Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   44 |     0 |        0 | PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_DRCK |
+| BUFG        | BUFHCE_X1Y33 |   no  |         0 |        0 |       0 |        22 |       0 |       0 | 2835 |   247 |        0 | PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1  |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y20 [get_cells PROGRAMATOR_INST/clk_wiz_1/U0/clkf_buf]
+set_property LOC BUFGCTRL_X0Y17 [get_cells PROGRAMATOR_INST/clk_wiz_1/U0/clkout1_buf]
+set_property LOC BUFGCTRL_X0Y16 [get_cells PROGRAMATOR_INST/clk_wiz_1/U0/clkout2_buf]
+set_property LOC BUFGCTRL_X0Y18 [get_cells PROGRAMATOR_INST/clk_wiz_1/U0/clkout3_buf]
+set_property LOC BUFGCTRL_X0Y19 [get_cells PROGRAMATOR_INST/clk_wiz_1/U0/clkout4_buf]
+set_property LOC BUFGCTRL_X0Y1 [get_cells PROGRAMATOR_INST/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK]
+set_property LOC BUFGCTRL_X0Y2 [get_cells PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_UPDATE_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y0 [get_cells PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/u_bufg_clkdiv0]
+
+# Location of IO Clock Primitives
+
+# Location of MMCM Clock Primitives
+set_property LOC MMCME2_ADV_X1Y2 [get_cells PROGRAMATOR_INST/clk_wiz_1/U0/mmcm_adv_inst]
+set_property LOC MMCME2_ADV_X1Y1 [get_cells PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/gen_mmcm.mmcm_i]
+
+# Location of BUFH Clock Primitives
+set_property LOC BUFHCE_X1Y12 [get_cells PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/u_bufh_pll_clk3]
+
+# Location of BUFR Clock Primitives
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+set_property LOC PLLE2_ADV_X1Y1 [get_cells PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/plle2_i]
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X1Y126 [get_ports CLK100MHZSYS]
+
+# Clock net "PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1" driven by instance "PROGRAMATOR_INST/clk_wiz_1/U0/clkout1_buf" located at site "BUFGCTRL_X0Y17"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out1}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/clk_wiz_1/U0/clk_out2" driven by instance "PROGRAMATOR_INST/clk_wiz_1/U0/clkout2_buf" located at site "BUFGCTRL_X0Y16"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out2}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out2}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/plle2_i} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/clk_wiz_1/U0/clk_out2"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out2}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/clk_wiz_1/U0/clk_out3" driven by instance "PROGRAMATOR_INST/clk_wiz_1/U0/clkout3_buf" located at site "BUFGCTRL_X0Y18"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out3}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out3}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/clk_wiz_1/U0/clk_out3"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out3}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/clk_wiz_1/U0/clk_out4" driven by instance "PROGRAMATOR_INST/clk_wiz_1/U0/clkout4_buf" located at site "BUFGCTRL_X0Y19"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out4}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out4}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/clk_wiz_1/U0/clk_out4"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/clk_wiz_1/U0/clk_out4}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_DRCK" driven by instance "PROGRAMATOR_INST/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_DRCK}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_DRCK}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_DRCK"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_DRCK}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_UPDATE" driven by instance "PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_UPDATE_BUFG_inst" located at site "BUFGCTRL_X0Y2"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_UPDATE}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_UPDATE}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_UPDATE"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mdm_1/U0/Ext_JTAG_UPDATE}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/CLK" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/u_bufg_clkdiv0" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/CLK}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/CLK}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/gen_mmcm.mmcm_i} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/CLK"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/CLK}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/freq_refclk" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/plle2_i" located at site "PLLE2_ADV_X1Y1"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/freq_refclk}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/freq_refclk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/freq_refclk"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/freq_refclk}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/mem_refclk" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/plle2_i" located at site "PLLE2_ADV_X1Y1"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/mem_refclk}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/mem_refclk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/mem_refclk"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/mem_refclk}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/sync_pulse" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/plle2_i" located at site "PLLE2_ADV_X1Y1"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/sync_pulse}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/sync_pulse}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/sync_pulse"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_ddr2_infrastructure/sync_pulse}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in" located at site "PHASER_IN_PHY_X1Y4"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in" located at site "PHASER_IN_PHY_X1Y4"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out" located at site "PHASER_OUT_PHY_X1Y4"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out" located at site "PHASER_OUT_PHY_X1Y4"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out" located at site "PHASER_OUT_PHY_X1Y4"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out" located at site "PHASER_OUT_PHY_X1Y5"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out" located at site "PHASER_OUT_PHY_X1Y5"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in" located at site "PHASER_IN_PHY_X1Y6"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/dq_gen_40.if_post_fifo_gen.if_empty_r_reg[3]_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in" located at site "PHASER_IN_PHY_X1Y6"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out" located at site "PHASER_OUT_PHY_X1Y6"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out" located at site "PHASER_OUT_PHY_X1Y6"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out" located at site "PHASER_OUT_PHY_X1Y6"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out" located at site "PHASER_OUT_PHY_X1Y7"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv" driven by instance "PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out" located at site "PHASER_OUT_PHY_X1Y7"
+#startgroup
+create_pblock {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv}
+add_cells_to_pblock [get_pblocks  {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv"}]]]
+resize_pblock [get_pblocks {CLKAG_PROGRAMATOR_INST/mig_7series_0/u_programator_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup

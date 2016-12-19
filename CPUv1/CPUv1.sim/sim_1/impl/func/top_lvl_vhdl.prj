@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../CPUv1.srcs/sources_1/new/CPU.vhd"
+vhdl xil_defaultlib  "../../../../CPUv1.srcs/sources_1/new/program_memory_mock.vhd"
+vhdl xil_defaultlib  "../../../../CPUv1.srcs/sources_1/new/top_lvl.vhd"
+
+# Do not sort compile order
+nosort

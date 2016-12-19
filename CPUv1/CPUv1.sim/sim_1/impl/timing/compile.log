@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/new/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CPU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/new/program_memory_mock.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity program_memory_mock
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/new/top_lvl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_lvl

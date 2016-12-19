@@ -1,0 +1,11 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/new/program_memory_mock.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity program_memory_mock
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/new/7seg_driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ss_driver
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/new/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CPU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/new/top_lvl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_lvl
+ERROR: [VRFC 10-716] formal port anodes of mode buffer cannot be associated with actual port an of mode out [E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/new/top_lvl.vhd:79]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/new/top_lvl.vhd:11]
+INFO: [VRFC 10-240] VHDL file E:/Dropbox/mgr/Workspaces/Vivado/CPUv1/CPUv1.srcs/sources_1/new/top_lvl.vhd ignored due to errors

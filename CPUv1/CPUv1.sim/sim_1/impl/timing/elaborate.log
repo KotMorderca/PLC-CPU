@@ -1,0 +1,20 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 505e6d7939bc494d983c5a49e2fa0360 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot top_lvl_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.top_lvl xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.CPU [\CPU(16)\]
+Compiling architecture behavioral of entity xil_defaultlib.program_memory_mock [program_memory_mock_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_lvl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot top_lvl_time_impl
